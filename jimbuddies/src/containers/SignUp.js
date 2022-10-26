@@ -1,11 +1,12 @@
 import '../styles/Home.css';
+import * as React from 'react';
+import Button from '@mui/material/Button';
 
 export default function SignUp() {
     return( 
             <div className="LandingPage LandingImg">
             <div className="LandingPageContent">
-                <h1 className="HeroWhiteColor">Welcome!</h1>
-                <h2 className="HeroWhiteColor">Sign up to continue</h2>
+                <h1 className="HeroWhiteColor">Sign up now to start using Jimbuddy!</h1>
                 <div className="LoginForm">
                 <input className="InputFields" type="text" id="email" name="e-mail" placeholder="E-mail">
                 </input>
@@ -15,9 +16,9 @@ export default function SignUp() {
                 </input>
                 </div>
                 <div className="btnContainer">
-                <button className="btnLandingPage">
-                Sign up
-                </button>
+                <Button variant='contained' className="btnLandingPage font-link">
+                    Sign up
+                </Button>
                 <a href="/" className="signuplink">
                 Go back
                 </a >

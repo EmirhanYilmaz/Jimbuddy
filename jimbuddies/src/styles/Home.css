@@ -30,13 +30,12 @@ body {
 }
 
 .LandingPageContent{
-  z-index: 1;
+  z-index: 2;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: black;
-  width: 40%;
+  width: 35%;
   height:70%;
   border-radius: 15px;
   
@@ -48,6 +47,7 @@ body {
 
 
 .LoginForm{
+
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -56,6 +56,7 @@ body {
 }
 
 .InputFields{
+  border: 0;
   width: 50%;
   margin-top: 2rem;
   padding: 15px;
@@ -78,15 +79,26 @@ body {
   align-items: center;
   display: flex;
   flex-direction: column;
+
 }
 
 .btnLandingPage{
-  background-color: #16db65;
+  background-color: #16db65!important;
+  font-weight: 400!important;
   height: 3rem;
   width: 7rem;
   border-radius: 10px;
+  letter-spacing: 3px!important;
+
 }
 .signuplink{
   margin-top: 1.5rem;
-  color: white;
+  color: white !important;
+  list-style: none;
+  list-style: none;
+}
+.font-link{
+  font-weight: 400;
+  font-style: normal;
+
 }
