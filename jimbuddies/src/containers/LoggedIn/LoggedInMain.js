@@ -1,14 +1,18 @@
-import '../styles/LoggedIn.css';
+import '../LoggedIn/LoggedIn.css';
 import * as React from 'react';
 import Button from '@mui/material/Button';
-export default function LoggedIn() {
+import {BrowserRouter as Router, Link} from 'react-router-dom';
+
+export default function LoggedInMain() {
     return(
             <div className="LoggedInContainer">
                 <div className='contentcontiner'>
                     <div className='trainingnav'>
-                        <div className='trainingnavcontainer'>Current program</div>
-                        <div className='trainingnavcontainer'>Programs</div> 
-                        <div className='trainingnavcontainer'>Create new program</div>
+                    <Link to="currentprogram" className='signuplink'>
+                    <Button variant="contained" className='trainingnavcontainer'>Current program</Button>
+                    </Link>
+                        <Button variant="contained" className='trainingnavcontainer'>All programs</Button>
+                        <Button variant="contained" className='trainingnavcontainer'>Create new program</Button>
                     </div>
                 </div>
 
