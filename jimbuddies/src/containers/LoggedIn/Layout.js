@@ -1,11 +1,14 @@
-import '../LoggedIn/LoggedIn.css';
+import '../LoggedIn/Layout.css';
 import * as React from 'react';
 import Button from '@mui/material/Button';
 import {BrowserRouter as Router, Link} from 'react-router-dom';
+import { Outlet } from "react-router-dom";
 
-export default function LoggedInMain() {
+
+const Layout=() => {
     return(
-            <div className="LoggedInContainer">
+        <>
+         <div className="LoggedInContainer">
                 <div className='contentcontiner'>
                     <div className='trainingnav'>
                     <Link to="currentprogram" className='signuplink'>
@@ -34,8 +37,15 @@ export default function LoggedInMain() {
                     
                 </div>  
             </div>
+
+            <Outlet />
+
         
-        );
-    }
+        </>
+           
+        )
+    };
+
+export default Layout
 
 
