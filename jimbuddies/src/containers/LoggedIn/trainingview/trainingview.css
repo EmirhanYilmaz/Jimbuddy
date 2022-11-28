@@ -1,0 +1,21 @@
+
+.currentprogramouter{
+    background-color: black;
+    height: 50vh;
+    color: white;
+    width: 80vw;
+}
+
+.currenprogramparent{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+}
+.navbarlinks{
+    text-decoration: none;
+}
+
+
+

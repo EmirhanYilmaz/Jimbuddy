@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "bootstrap": "^5.2.2",
+    "react-bootstrap": "^2.6.0",
+    "react-panel-system": "^1.0.4"
+  }
+}

@@ -1,0 +1,104 @@
+body {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+
+}
+.LandingPage::before {  
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-color: rgba(0,0,0,0.25);
+}
+
+.LandingPage{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background-image: url(../resources/background2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.LandingPageContent{
+  display: flex;
+  z-index: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 35%;
+  height:70%;
+  border-radius: 15px;
+  
+}
+
+.HeroWhiteColor{
+  color:white;
+}
+
+
+.LoginForm{
+
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.InputFields{
+  border: 0;
+  width: 50%;
+  margin-top: 2rem;
+  padding: 15px;
+  background-color: gray;
+  color: black;
+  border-radius: 10px;
+}
+.InputFields::placeholder{
+  color: black;
+}
+.InputFields[type=text]:focus {
+  border: 3px solid #ccc;
+  background-color: #b7b7b7;
+  outline: none;
+}
+.btnContainer{
+  width: 50%;
+  padding: 2rem;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.btnLandingPage{
+  background-color: rgb(124, 169, 130)!important;
+  font-weight: 400!important;
+  height: 3rem;
+  width: 7rem;
+  border-radius: 10px;
+  letter-spacing: 3px!important;
+
+}
+.signuplink{
+  margin-top: 1.5rem;
+  color: white !important;
+  list-style: none;
+  list-style: none;
+}
+.font-link{
+  font-weight: 400;
+  font-style: normal;
+
+}

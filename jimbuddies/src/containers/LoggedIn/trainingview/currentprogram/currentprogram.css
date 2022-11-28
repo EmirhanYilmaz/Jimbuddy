@@ -1,0 +1,27 @@
+.traniningnavbtn{
+    background-color: grey !important;
+}
+.traniningnavbtn:hover{
+    background-color: black!important;
+    color: #16db65!important;
+
+}
+
+.currentprogramcontainer{
+    min-height:80vh !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    
+}
+.currentprograminner{
+    height: 60vh;
+    width: 80vw;
+    background-color: white;
+    margin-bottom: 3rem;
+    border-radius: 5px;
+    border-color: #16db65;
+    border-width: 6px;
+    border-style: solid;
+}

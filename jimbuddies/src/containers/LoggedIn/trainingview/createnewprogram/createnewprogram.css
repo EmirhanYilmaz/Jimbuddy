@@ -1,0 +1,60 @@
+
+.traniningnavbtn{
+    background-color: grey !important;
+}
+.traniningnavbtn:hover{
+    background-color: black!important;
+    color: #16db65!important;
+
+}
+.createprogramcontainer{
+    height: 80vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+.createprogramcontainerinner{
+    display: flex;
+    margin-top: 2rem;
+    flex-direction: column;
+}
+.createprogramhero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+outlined-basic{
+    margin-bottom: 2rem;
+}
+.textfieldcont{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+.excersisebox{
+    display: flex;
+    align-items: center;
+}
+.excersiseinnercont{
+    justify-content: center;
+    align-items: center;
+    border: 2px;
+    border-style: solid;
+    border-color: #16db65;
+    padding: 1rem;
+}
+#addsettag{
+   color: black;
+   margin-left: 3rem;
+}
+#setname{
+    margin-left: -2rem;
+}
+
+.programName{
+    margin-bottom: 2rem; 
+
+}
