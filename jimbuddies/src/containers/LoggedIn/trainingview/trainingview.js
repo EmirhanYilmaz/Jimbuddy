@@ -1,11 +1,10 @@
 import * as React from "react";
-import "./trainingview.css";
-import "./currentprogram/currentprogram.css"
+import "../trainingview/trainingview.css";
 import "./allprograms/allprograms"
 import "./createnewprogram/createnewprogram"
-
 import Button from "@mui/material/Button";
 import { BrowserRouter as Router, Link, Outlet } from "react-router-dom";
+
 
 const Trainingview=() => {
   return (  <>

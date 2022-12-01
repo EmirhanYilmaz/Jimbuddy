@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import '../styles/Home.css';
-import '../index.css';
+import '../styles/index.css';
 
 import * as React from 'react';
 import Button from '@mui/material/Button';

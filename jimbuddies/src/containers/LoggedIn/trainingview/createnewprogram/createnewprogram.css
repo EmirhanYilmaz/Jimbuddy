@@ -1,12 +1,15 @@
 
-.traniningnavbtn{
-    background-color: grey !important;
+.MuiOutlinedInput-input{
+    color:#003566!important;
+    background-color: black;
 }
-.traniningnavbtn:hover{
-    background-color: black!important;
-    color: #16db65!important;
+.MuiOutlinedInput-input:focus{
+    background-color: #ffc300;
+}
+.MuiOutlinedInput-input{
+    border-color: red!important;
+}
 
-}
 .createprogramcontainer{
     height: 80vh;
     width: 100vw;
@@ -20,12 +23,11 @@
     flex-direction: column;
 }
 .createprogramhero{
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
-
 outlined-basic{
     margin-bottom: 2rem;
 }
@@ -37,18 +39,23 @@ outlined-basic{
 .excersisebox{
     display: flex;
     align-items: center;
+    border: white;
 }
 .excersiseinnercont{
     justify-content: center;
     align-items: center;
     border: 2px;
     border-style: solid;
-    border-color: #16db65;
+    border-color: #004c94;
     padding: 1rem;
+    color: #003566;
+    border-radius: 10px;
 }
 #addsettag{
    color: black;
-   margin-left: 3rem;
+   margin-left: 1rem;
+   color: #003566;
+
 }
 #setname{
     margin-left: -2rem;
@@ -57,4 +64,14 @@ outlined-basic{
 .programName{
     margin-bottom: 2rem; 
 
+}
+.submitBtn{
+    padding: 10px;
+    margin-left: 30px;
+    background-color: #ffc300;
+    border-radius: 10px;
+    color: #003566;
+}
+.xTag{
+    color: #003566;
 }

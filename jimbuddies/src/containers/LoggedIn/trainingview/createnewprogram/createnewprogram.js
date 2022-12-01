@@ -13,8 +13,18 @@ import "../createnewprogram/createnewprogram.css";
 import Button from "@mui/material/Button";
 import { useState } from "react";
 import { useRef } from "react";
+import { useNavigate } from "react-router";
+import "../createnewprogram/createnewprogram.css"
+import { alpha, styled } from '@mui/material/styles';
+import { createTheme } from '@mui/material/styles';
+
+
+
 
 export const Createnewprogram = () => {
+
+
+
   const id = useRef(0);
 
   const [exercises, setExercises] = useState([]); // Use useReducer here, especially if you want to CRUD the exercises.
@@ -34,17 +44,57 @@ export const Createnewprogram = () => {
   const handleAddExercise = (excersiseToAdd) => {
     const exerciseToAdd = {
       weight: "",
-      repititions: "",
+      reps: "",
     };
 
     setExercises((previousExercises) => [...previousExercises, exerciseToAdd]);
   };
-  const removeSet = (excersiseToAdd) => {
-   
-  };
+  const removeSet = (excersiseToAdd) => {};
+
+  const [programForm, setForm] = useState({
+    name: "",
+    excersise: "",
+    set: 1,
+    weight: "",
+    reps: "",
+  });
+
+  function handleChange(event) {
+    const { name, value, type, checked } = event.target;
+    setForm((prevFormData) => {
+      return {
+        ...prevFormData,
+        [name]: type === "checked" ? checked : value,
+      };
+    });
+  }
+
+  // This function will handle the submission.
+  async function onSubmit(e) {
+
+    // When a post request is sent to the create url, we'll add a new record to the database.
+    const newProgram = { ...programForm };
+
+    await fetch("http://localhost:5000/record/add", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(newProgram),
+    }).catch((error) => {
+      window.alert(error);
+      return;
+    });
+
+    setForm({ name: "", excersise: "", set: "", weight: "", reps: "" });
+  }
+
+  console.log(programForm)
+
+
 
   return (
-    <main>
+    <form onSubmit={onSubmit}>
       <div className="createprogramcontainer">
         <div className="createprogramcontainerinner">
           <div className="programName">
@@ -61,6 +111,10 @@ export const Createnewprogram = () => {
                 label="Excersise"
                 id="outlined-start-adornment"
                 size="small"
+                value={setForm.excersise}
+                name="excersise"
+                onChange={handleChange}
+              
               />
             </div>
 
@@ -78,6 +132,9 @@ export const Createnewprogram = () => {
                         id="outlined-adornment-weight"
                         placeholder="Weight"
                         size="small"
+                        value={setForm.weight}
+                        name="weight"
+                        onChange={handleChange}
                         endAdornment={
                           <InputAdornment position="end">kg</InputAdornment>
                         }
@@ -89,13 +146,18 @@ export const Createnewprogram = () => {
                     </FormControl>
                   </div>
 
-                  <p>x</p>
+                  <p className="xTag">x</p>
 
                   <div className="textfieldcont">
                     <TextField
                       label="Reps"
                       id="outlined-start-adornment"
                       size="small"
+                      value={setForm.reps}
+                      name="reps"
+                      onChange={handleChange}
+                      
+                      
                     />
                     <div className="removesetBtn">
                       <Button
@@ -123,9 +185,10 @@ export const Createnewprogram = () => {
             <a id="addsettag" onClick={handleAddExercise}>
               Add set
             </a>
+            <button className="submitBtn">submit</button>
           </div>
         </div>
       </div>
-    </main>
+    </form>
   );
 };

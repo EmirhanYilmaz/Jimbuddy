@@ -10,7 +10,7 @@ const Currentprogram = () => {
     
     <div className="currentprogramcontainer">
       <div className="currentprograminner">
-      
+      <h1>current program</h1>
       </div>
     </div>
 

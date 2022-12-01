@@ -1,11 +1,3 @@
-.traniningnavbtn{
-    background-color: grey !important;
-}
-.traniningnavbtn:hover{
-    background-color: black!important;
-    color: #16db65!important;
-
-}
 
 .currentprogramcontainer{
     min-height:80vh !important;

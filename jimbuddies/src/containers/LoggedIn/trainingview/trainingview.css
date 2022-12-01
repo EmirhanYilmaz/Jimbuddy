@@ -1,6 +1,6 @@
 
 .currentprogramouter{
-    background-color: black;
+    background-color: 001d3d;
     height: 50vh;
     color: white;
     width: 80vw;
@@ -15,6 +15,10 @@
 }
 .navbarlinks{
     text-decoration: none;
+}
+.traniningnavbtn{
+    background-color: #ffc300!important;
+    color: #003566!important;
 }
 
 
