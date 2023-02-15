@@ -31,7 +31,7 @@ export default function SignUp() {
             Sign up
           </Button>
 
-          <a className="signuplink">Go back</a>
+          <Link to="/" className="signuplink">Go back</Link>
         </div>
       </div>
     </div>

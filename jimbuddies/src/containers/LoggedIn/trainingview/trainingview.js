@@ -21,7 +21,7 @@ const Trainingview=() => {
         </Button>
       </Link>
 
-      <Link to="createnewprogram" className="navbarlinks">
+      <Link to="createprogram" className="navbarlinks">
         <Button variant="contained" className="trainingnavcontainer traniningnavbtn">
           Create new program
         </Button>

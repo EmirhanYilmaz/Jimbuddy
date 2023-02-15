@@ -11,7 +11,7 @@ const Layout=() => {
            
                 <div className="navbar">
                     <div>
-                        <Link to='trainingview' className='navbarcirclecontainer' >
+                        <Link to='/training' className='navbarcirclecontainer' >
                             <Button variant='contained' className="navbarcircle"></Button>
                             <a className="navbarcircletxt">Training</a>
                         </Link>
@@ -19,7 +19,7 @@ const Layout=() => {
                     </div>
                     
                     <div>
-                        <Link to='forumview' className='navbarcirclecontainer' >
+                        <Link to='forum' className='navbarcirclecontainer' >
                             <Button variant='contained' className="navbarcircle"></Button>
                             <a className="navbarcircletxt">Forum</a>
                         </Link>
@@ -27,7 +27,7 @@ const Layout=() => {
                     </div>
 
                     <div>
-                        <Link to='progresspicview' className='navbarcirclecontainer' >
+                        <Link to='progresspics' className='navbarcirclecontainer' >
                             <Button variant='contained' className="navbarcircle"></Button>
                             <a className="navbarcircletxt">Progress pics</a>
                         </Link>
